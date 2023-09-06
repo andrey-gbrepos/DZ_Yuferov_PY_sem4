@@ -31,11 +31,14 @@ else:
     
     max_sum = 0
     temp_sum = 0
+    id_kusta = 0
     
-    for i in range(q):                  
-        for j in range(QUAN): 
+    for i in range(q):             
+        for j in range(QUAN):
             temp_sum += q_list[(i+j)%q]   
         if max_sum < temp_sum: 
             max_sum = temp_sum
+            id_kusta = i + 1
         temp_sum = 0
+    print('id центрального куста: ', id_kusta) 
     print('Максимальная сумма: ', max_sum, '\n')     
