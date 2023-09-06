@@ -38,7 +38,7 @@ else:
             temp_sum += q_list[(i+j)%q]   
         if max_sum < temp_sum: 
             max_sum = temp_sum
-            id_kusta = (i%q+2)%q
+            id_kusta = (i%q+1)%q+1
         temp_sum = 0
     print('Номер (с 1-цы) центрального куста: ', id_kusta) 
     print('Максимальная сумма: ', max_sum, '\n')     
