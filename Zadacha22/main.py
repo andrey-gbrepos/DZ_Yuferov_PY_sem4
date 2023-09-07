@@ -25,7 +25,7 @@ for i in range(m):
     m_list.append(random.randint(MIN, MAX))
 print("2-е множество: ", *m_list)
 
-result = list(set(n_list).union(set(m_list))) # Формирование множества -> списка
+result = list(set(n_list).intersection(set(m_list))) # Формирование множества -> списка
 result.sort()
 
 print('\n','Результат: ',*result, '\n')
